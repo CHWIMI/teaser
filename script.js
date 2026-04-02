@@ -157,8 +157,8 @@ passwordInput?.addEventListener('input', (e) => {
 
 function startCountdown() {
     const timerEl = document.getElementById('timer');
-    // Using simple offset so it doesn't break depending on local system zone too much, but D-Day is April 9th 2026.
-    const targetDate = new Date('2026-04-09T00:00:00+09:00').getTime();
+    // Using simple offset so it doesn't break depending on local system zone too much, but D-Day is April 8th 2026.
+    const targetDate = new Date('2026-04-08T00:00:00+09:00').getTime();
 
     function update() {
         const now = new Date().getTime();
