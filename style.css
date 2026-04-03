@@ -497,18 +497,22 @@ footer {
     font-size: 0.95rem;
     line-height: 1.4;
 
-    /* Multiline Ellipsis (up to 2 lines) */
+    /* Mobile compatibility and whitespace conservation */
+    display: block;
+    /* Fallback */
     display: -webkit-box;
     -webkit-line-clamp: 2;
     line-clamp: 2;
     -webkit-box-orient: vertical;
+
+    white-space: pre-wrap;
+    word-break: keep-all;
+    overflow-wrap: break-word;
     overflow: hidden;
     text-overflow: ellipsis;
 
-    /* Allow wrapping and breaking with space conservation */
-    white-space: pre-wrap;
-    word-break: keep-all;
-    overflow-wrap: anywhere;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Responsiveness Phase 2 */
