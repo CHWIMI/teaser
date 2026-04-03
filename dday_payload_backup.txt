@@ -1,0 +1,18 @@
+=== D-Day 적용용 진짜 페이로드 백업본 ===
+적용 일시: 2026년 4월 8일 자정
+
+D-Day가 되면 `script.js` 파일을 열어서 아래 두 부분을 교체해 주세요.
+
+1. ENCRYPTED_PAYLOAD 교체
+script.js의 145번째 줄 부근에 있는 const ENCRYPTED_PAYLOAD = "..."; 영역 안의 따옴표 안 내용을 아래 문자로 덮어씌우세요.
+
+U2FsdGVkX1/xE3slp2YvCBviicTMpN0H8Zk5HMFd2BKwn0IPZoCclPAtYmCoOPDK1cMt3dffUfVZJ8Y1UTMmkJpraU5brA8mYNKwc09i79pXklSy0a1BVN8xanAjl3bwEkIJQUjtt7iFK1ncntCYcPESyRFOp8N9P8neqELp4dX6gj7/s0/c2qm+1CVhCgrjEjeqtWsyzmjco5B5+TpbXdQFjIFavdgDGLFSYQe/ds4aQ1w53aeERKCpuwfFneMp8FLo986Sc34Eg4fOszvxnGjHjYz1maTWFcKh8/qZWIcxQlSZzMcZFyIz3SBbyyFHKXrSXrz6EopGYJ4/38ZVLfADLy/FIP289lbIiDBcG5mZZSuI4WyUXtMcU3O2JWr6UEK/mhezcQjX657ljaCnyVmeM7nPEUbxD65pqOgOz6OoDZo3CoMbAj3XhIRvsuhkMSAKK+4tGUC+jvkNuIHzS1HsXUgvtGeKYSr4YzGlDVcfG1zPPpvNbENRG6UCgKZSbJbqPY4HKh9fhMERc0I2xg==
+
+2. 목표 날짜 교체
+script.js의 startCountdown 함수 내부에 있는 targetDate의 날짜를 4월 8일로 변경하세요.
+예시: const targetDate = new Date('2026-04-08T00:00:00+09:00').getTime();
+
+
+백업용 기존 코드
+
+const ENCRYPTED_PAYLOAD = "U2FsdGVkX19rBMNT09adwslOWtw47staZZEbZcTq+cKAZT/8MJxbFTj1j74UiEW40n/oC+uKpHc7sPbbj5y2r5oNZPJl73z5Wjy5cT/8VVOVoWMb1gwZuYE7Jg10qgAQmtrmjaWq1UxGIxwrm5eCPBSLhgfM8p+Yv4S2Ykxuc1Ptx/mYZzwr53b0IRByKVbiDmRl1K4mPQJTNsoBsVFjlVzmadC8itGVzgSVvscXbaMQD3d/TPf2h56cI16fBG1tdSnXK6VuL9tgbqUSi0S6n7jhaatk340T7Xmo+M0LrLVNSqQKW2nbArlGkQU3WuSxfWTAvOuycPQZYCCcoMGaOXdZoB9tnXpQI9FHXVc13lkYdG99wmhbe6OLfVk2iswdzNr8XkmjwPnWfIMTT2Dw1D2pOr3SYFZWhRoBYlgOa94JtWn873VeD6N/vHc+6tsNbtNoOm9Uw2V8xFg8iw0Jq2PuE7ApXjCVQqqAgDF0bAXAhc+wShr5Par1Bx2Pio1kbFT9n7YQIQnNEv49YP32g8j3w+iYNh8N+K+MG/m99fZ9mb6BSiDTWn8odsVFkRV0GijJ/zrX+Qr1342Z+wY1LjvsECuCpqBxAM+3mHbbkRMRn8yiY+le5hhBRllJ8u0j";
