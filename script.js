@@ -257,7 +257,7 @@ const POSTS = [
         date: '2026-04-01',
         status: '진행중',
         content: `
-            <h3>용의 협곡 통행 제한 안내</h3>
+            <h3>동쪽 숲 통행 제한 및 우회도로 안내</h3>
             <img src="warning.png" alt="경고문" style="max-width:100%; border-radius:8px; margin-bottom:20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
             <p>현재 세레니티 동쪽숲에서 몰랑쿤의 10배나 차이나는 크기의 그림자가 목격돼 출입을 제한합니다.</p>
             <br>
