@@ -279,7 +279,7 @@ const POSTS = [
         content: `
             <h3>청년자문단 최종합격자 공고</h3>
             <img src="notice.jpg" alt="공고문" style="max-width:100%; border-radius:8px; margin-bottom:20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-            <p>(자칭) 세레니티 기획부 제3기 청년자문단 최종합격자를 다음과 같이 공고합니다.</p>
+            <p>세렝게티 제3기 청년자문단 최종합격자를 다음과 같이 공고합니다.</p>
             <br>
             <p>합격을 축하드리며, 상세 사항은 개별 (안) 안내 예정입니다.</p>
         `
