@@ -362,12 +362,11 @@ const POSTS = [
 
 
 /* =========================================
- * 📝 게시판 렌더링 및 상세 보기
- * ========================================= */
+ * 게시판 렌더링 및 상세 보기 */
 
 /**
- * 게시판 목록을 POSTS 배열 기반으로 렌더링합니다.
- * initBoard()에서 호출됩니다.
+ * 게시판 목록을 POSTS 배열 기반으로 렌더링.
+ * initBoard()에서 호출.
  */
 function renderBoardList() {
     const ul = document.getElementById('board-list-ul');
@@ -394,7 +393,7 @@ function renderBoardList() {
 }
 
 /**
- * 게시글 상세 페이지를 표시합니다.
+ * 게시글 상세 페이지를 표시.
  * @param {number} postId - 표시할 게시글 ID
  * @param {boolean} pushHistory - 히스토리 추가 여부
  */
@@ -487,14 +486,13 @@ function initBoard() {
 
 
 /* =========================================
- * 🎬 슬라이더 시스템
- * =========================================
+ * 슬라이더
  * initSlider(config) 함수로 Hero, 사진뉴스, 동영상뉴스
- * 세 영역의 슬라이더를 각각 초기화합니다.
+ * 세 영역의 슬라이더를 각각 초기화합
  */
 
 /**
- * 슬라이더를 초기화합니다.
+ * 슬라이더를 초기화
  * @param {Object} config - 슬라이더 설정
  * @param {string} config.trackId      - 슬라이더 트랙 요소 ID
  * @param {string} config.indicatorId  - 페이지 표시 요소 ID
@@ -604,10 +602,10 @@ function initSliders() {
 
 
 /* =========================================
- * 🏛️ 커스텀 모달 ("~주농에 갔어요" 알림)
+ * 커스텀 모달 ("~주농에 갔어요" 알림)
  * ========================================= */
 
-/** 모달을 엽니다. */
+/** 모달 오쁜 */
 function showModal(message) {
     const modal = document.getElementById('custom-modal');
     const msgEl = modal?.querySelector('.modal-message');
@@ -615,17 +613,16 @@ function showModal(message) {
     modal?.classList.remove('hidden');
 }
 
-/** 모달을 닫습니다. */
+/** 모달 클로즈 */
 function hideModal() {
     document.getElementById('custom-modal')?.classList.add('hidden');
 }
 
 
 /* =========================================
- * 🚨 네비게이션 알림 초기화
- * ========================================= */
+ * 네비게이션 알림 초기화 */
 
-/** 상단 네비게이션 클릭 시 커스텀 모달을 표시합니다. */
+/** 상단 네비게이션 클릭 시 커스텀 모달을 표시 */
 function initNavAlerts() {
     const MSG = '해당 기능은 주농에 갔어요';
 
@@ -643,7 +640,7 @@ function initNavAlerts() {
         showModal(MSG);
     });
 
-    // GNB 네비게이션 메뉴 (이벤트 위임 - 이슈 2 성능 개선)
+    // GNB 네비게이션 메뉴 (이벤트 위임)
     document.querySelector('.gnb-nav ul')?.addEventListener('click', (e) => {
         if (e.target.tagName === 'LI') {
             showModal(MSG);
